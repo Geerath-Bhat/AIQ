@@ -1,0 +1,57 @@
+/* src/components/RichTextEditorWrapper.css */
+
+.rich-text-editor-container .ql-toolbar.ql-snow {
+  border-top-left-radius: 0.375rem; /* rounded-md */
+  border-top-right-radius: 0.375rem; /* rounded-md */
+  border: 1px solid #e5e7eb; /* Tailwind gray-200 */
+  border-bottom: 0;
+  background-color: #f9fafb; /* Tailwind gray-50 */
+}
+
+.rich-text-editor-container .ql-container.ql-snow {
+  border-bottom-left-radius: 0.375rem; /* rounded-md */
+  border-bottom-right-radius: 0.375rem; /* rounded-md */
+  border: 1px solid #e5e7eb; /* Tailwind gray-200 */
+  min-height: 150px; /* Default min height */
+  font-size: 1rem; /* Tailwind text-base */
+  background-color: white;
+}
+
+.rich-text-editor-container .ql-editor {
+  padding: 12px 15px;
+  line-height: 1.6;
+}
+
+.rich-text-editor-container .ql-editor.ql-blank::before {
+  color: #9ca3af; /* Tailwind gray-400 */
+  font-style: normal;
+  left: 15px;
+  right: 15px;
+}
+
+/* Dark mode considerations (if you have a dark theme) */
+.dark .rich-text-editor-container .ql-toolbar.ql-snow {
+  border: 1px solid #4b5563; /* Tailwind gray-600 */
+  background-color: #374151; /* Tailwind gray-700 */
+}
+
+.dark .rich-text-editor-container .ql-toolbar.ql-snow .ql-formats button .ql-stroke,
+.dark .rich-text-editor-container .ql-toolbar.ql-snow .ql-formats button .ql-fill,
+.dark .rich-text-editor-container .ql-toolbar.ql-snow .ql-formats button svg .ql-stroke {
+  stroke: #d1d5db; /* Tailwind gray-300 */
+  fill: #d1d5db; /* Tailwind gray-300 */
+}
+.dark .rich-text-editor-container .ql-toolbar.ql-snow .ql-picker-label {
+    color: #d1d5db; /* Tailwind gray-300 */
+}
+
+
+.dark .rich-text-editor-container .ql-container.ql-snow {
+  border: 1px solid #4b5563; /* Tailwind gray-600 */
+  background-color: #1f2937; /* Tailwind gray-800 */
+  color: #d1d5db; /* Tailwind gray-300 */
+}
+
+.dark .rich-text-editor-container .ql-editor.ql-blank::before {
+  color: #6b7280; /* Tailwind gray-500 */
+}
